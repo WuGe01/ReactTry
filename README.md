@@ -1,6 +1,6 @@
 # 參考來源-跟著Youtuber Coding學習
 
-【前端速成】React 快速入門｜Tiktok工程師帶你入門前端｜布魯斯前端
+【前端速成】React 快速入門｜Tiktok工程師帶你入門前端｜布魯斯前端\
 https://www.youtube.com/watch?v=zqV7NIFGDrQ
 
 # Getting Started with Create React App

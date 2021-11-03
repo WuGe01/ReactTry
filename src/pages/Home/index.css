@@ -1,5 +1,6 @@
 .app{
-    width: 100%;
+    margin: 10px;
+    width:calc(100%-20px);
     padding: 20px;
     border: 1px solid black;
     box-sizing: border-box;

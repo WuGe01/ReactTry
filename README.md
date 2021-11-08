@@ -3,6 +3,9 @@
 【前端速成】React 快速入門｜Tiktok工程師帶你入門前端｜布魯斯前端\
 https://www.youtube.com/watch?v=zqV7NIFGDrQ
 
+#預覽-GithubPage
+https://wuge01.github.io/ReactTry/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

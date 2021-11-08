@@ -21,7 +21,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "prettier": "prettier -w src/"
+    "prettier": "prettier -w src/",
+    "server":"json-server --watch db.json --port 3001"
   },
   "eslintConfig": {
     "extends": [

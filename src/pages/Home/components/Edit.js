@@ -16,6 +16,7 @@ const Edit = ({ add }) => {
   }
 
   function addItem() {
+    window.alert("新增成功");
     add(function (prevData) {
       return [
         {

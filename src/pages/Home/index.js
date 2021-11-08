@@ -1,4 +1,4 @@
-import { useState,useEffect } from "react";
+import { useState,useEffect,useRef } from "react";
 import { API_GET_DATA } from "../global/constants";
 
 import Edit from "./components/Edit";
@@ -6,24 +6,35 @@ import List from "./components/List";
 import "./index.css";
 
 async function callAPI(setData) {
-  const res = await fetch(API_GET_DATA);
-  const { data } = await res.json();
-  console.log(data);
+  
+  //沒有JsonServe註解
+  // const res = await fetch(API_GET_DATA);
+  // const { data } = await res.json();
+  //沒有JsonServe註解
+
+  const data = [{
+    "id":"1",
+    "note":"預設資料(初始化資料)-抓JSON練習(無JsonServe模式)",
+    "date":"",
+    "time":""
+  }];
+
   setData(data);
-  // return data;
 };
 
 const Home = () => {
 
   const [data, setData] = useState([]);
+  const dataInitialization = useRef(true);
 
   useEffect(()=>{
 
-    // callAPI(setData);
-
-    return() => {
-      window.alert("新增成功");
+    if(dataInitialization.current === true){
+      callAPI(setData).then(
+        dataInitialization.current = false
+      );
     }
+
   },[data]);
 
  

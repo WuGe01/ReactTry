@@ -1,5 +1,6 @@
 const Item = ({ note, date, time,delDate,id }) => {
   function delItem() {
+    window.alert("刪除成功");
     delDate(function (prev) {
       return prev.filter(item => item.id !==id )
     })

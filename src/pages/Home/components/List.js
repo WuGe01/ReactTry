@@ -2,7 +2,7 @@ import Item from "./Item";
 const List = ({ listData, delDate }) => {
   return (
     <div className="list">
-      {listData.map((item) => {
+{listData.map((item) => {
         const { note, date, time, id } = item;
         return (
           <Item
